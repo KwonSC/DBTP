@@ -12,7 +12,7 @@ public class  DBConnect  {
     public DBConnect()
     {
         try{
-            Class.forName("com.mysql.jdbc.Driver");
+            Class.forName("com.mysql.cj.jdbc.Driver");
             con = DriverManager.getConnection(url, ID, PW);
             stmt = con.createStatement();
         }
